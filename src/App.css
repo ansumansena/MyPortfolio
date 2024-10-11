@@ -1,0 +1,82 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.AppBar {
+  background: linear-gradient(90deg, #1976d2, #1e88e5);
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #1976d2;
+  color: white;
+}
+
+h3 {
+  color: #1976d2;
+}
+
+h5 {
+  margin-bottom: 16px;
+  color: #333;
+}
+
+h6 {
+  color: #fff;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.list-item {
+  margin: 10px 0;
+}
+
+.linear-progress {
+  height: 10px;
+  border-radius: 5px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 20px; /* Space between icons */
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Add button styles */
+.MuiButton-contained {
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
