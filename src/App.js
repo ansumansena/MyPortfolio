@@ -28,8 +28,8 @@ const skills = [
   { name: "CSS", level: 95 },
   { name: "JavaScript", level: 90 },
   { name: "React", level: 95 },
-  { name: "Node.js", level: 90 },
-  { name: "Express.js", level: 90 },
+  { name: "Node", level: 90 },
+  { name: "Express", level: 90 },
   { name: "MongoDB", level: 90 },
   { name: "AWS Amplify", level: 85 },
 ];
@@ -38,7 +38,7 @@ const sections = [
   {
     title: "About Me",
     content: (
-      <Typography variant="body1">
+      <Typography variant="body1" sx={{marginTop:"10px"}}>
         I'm a passionate web developer with experience in creating dynamic web applications. 
         I specialize in React and have worked with various frameworks and technologies.
       </Typography>
@@ -188,7 +188,8 @@ const sections = [
     content: (
       <List>
         <ListItem sx={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
-          <ListItemText
+          <ul>
+          <li><ListItemText
             primary={
               <a
                 href="https://smartinternz.com/internships/salesforce_certificates/24ee89e653e6e5cf2cd38b38353a9da2"
@@ -198,8 +199,8 @@ const sections = [
                 Salesforce Developer Virtual Internship
               </a>
             }
-          />
-          <ListItemText
+          /></li>
+          <li><ListItemText
             primary={
               <a
                 href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIxOTA5IiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvdGh1bWJfMzE5ODc2N18xNjQyOTUzNTcyLnBuZyIsInVzZXJuYW1lIjoiQW5zdW1hbiBTZW5hcGF0aSJ9&utm_source=shared-certificate&utm_medium=lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Flms.simplilearn.com%2Fdashboard%2Fcertificate&%24web_only=true"
@@ -209,9 +210,10 @@ const sections = [
                 Introduction to C++
               </a>
             }
-          />
-          <ListItemText primary="Certificate of appreciation for completing Cloud Engineering & Machine Learning Track in 30 days of Google Cloud Program" />
-          <ListItemText primary="Learning Java" />
+          /></li>
+          <li><ListItemText primary="Certificate of appreciation for completing Cloud Engineering & Machine Learning Track in 30 days of Google Cloud Program" /></li>
+          <li><ListItemText primary="Learning Java" /></li>
+          </ul>
         </ListItem>
       </List>
     ),
@@ -260,7 +262,7 @@ const App = () => {
       {/* Hero Section */}
       <Box textAlign="center" marginTop={4} marginBottom={4}>
         <motion.h3 initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-          Welcome to My Portfolio!
+         Step Into My World of Code!
         </motion.h3>
         <motion.p initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}>
           I'm Ansuman Senapati
@@ -292,9 +294,15 @@ const App = () => {
       <footer>
         <Typography variant="h6" style={{ margin: "20px 0 15px 0" }}>Contact</Typography>
         <div className="footer-links">
-          <a href="mailto:ansumansenapati10@gmail.com" style={{ marginRight: "20px" }}>
-            <EmailIcon style={{ fontSize: 40 }} />
-          </a>
+        <a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=ansumansenapati10@gmail.com&su=Portfolio Inquiry&body=Hi Ansuman, I would like to connect with you!"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ marginRight: "20px" }}
+>
+  <EmailIcon style={{ fontSize: 40 }} />
+</a>
+
           <a href="https://github.com/ansumansena" target="_blank" rel="noopener noreferrer" style={{ marginRight: "20px" }}>
             <GitHubIcon style={{ fontSize: 40, color: "#333" }} />
           </a>
